@@ -1,0 +1,18 @@
+
+html {
+    box-sizing: border-box;
+  }
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+body {
+    font: 18px/1.2 Alegreya Sans;
+}
+.wrapper {
+    min-width: $container + 20px;
+}
+.container {
+    max-width: $container;
+    margin: 0 auto;
+}

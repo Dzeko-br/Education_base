@@ -1,0 +1,35 @@
+.chooko {
+    background: url('/images/chookolate.png') 90% center no-repeat,
+    url('/images/bg_list.png') right bottom no-repeat;
+    background-color: $blueColor;
+    min-height: 60vh;
+    color: #fff;
+    height: 100vh;
+    padding: 24px 0 50px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    &__title-container {
+        max-width: 40%;
+    }
+
+    &__main-title {
+        text-transform: uppercase;
+        font-size: 48px;
+        line-height: 1.2;
+        font-weight: 700;
+        margin-bottom: 17px;
+    }
+
+    &__main-desc {
+        font-size: 21px;
+        line-height: 1.2;
+        font-weight: 400;
+        margin-bottom: 32px;
+    }
+}

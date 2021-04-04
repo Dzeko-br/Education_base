@@ -1,0 +1,16 @@
+.main-menu {
+
+    &__list{
+        list-style-type: none;
+        display: flex;
+        // color: #fff;
+        column-gap: 1.8rem;
+        padding-left: unset;
+        margin: 0;
+    }
+
+    &__link {
+        color: inherit;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,35 @@
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: unset;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 18px 41px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+
+
+    &.btn--white {
+        background-color: #fff;
+        color: $greenColor;
+        transition: .2s;
+        -webkit-transition: .2s;
+        -moz-transition: .2s;
+        -ms-transition: .2s;
+        -o-transition: .2s;
+
+        &:hover {
+            background-color: $greenColor;
+            color: #fff;
+            transition: .2s;
+            -webkit-transition: .2s;
+            -moz-transition: .2s;
+            -ms-transition: .2s;
+            -o-transition: .2s;
+        }
+    }
+}
