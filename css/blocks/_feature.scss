@@ -1,0 +1,35 @@
+
+.feature {
+    text-align: center;
+}
+
+.feature__img-container {
+    background-color: #F2F5F4;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature__icon{
+    flex-shrink: 0;
+    width: 68px;
+    height: 68px;    
+}
+
+.feature__name {
+    font-weight: bold;
+    font-size: 27px;
+}
+.feature__name + .feature__desc {
+    margin-top: 15px;
+}
+
+.feature__desc{
+    color: #666666;
+    line-height: 1.3;
+}
