@@ -1,0 +1,22 @@
+.humburger {
+    width: 26px;
+    height: 24px; //add workspop
+    display: none;
+    flex-shrink: 0;
+
+    @include tablet {
+        display: block;
+    }
+}
+
+.humburger_line {
+    display: block;
+    height: 4px;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.humburger_line + .humburger_line {
+    margin-top: 5px;
+}

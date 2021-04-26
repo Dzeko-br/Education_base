@@ -44,13 +44,19 @@
                                 </li>
                             </ul>
                         </nav>
-                        <!--вопросы-->
-                        <a href="tel:88009039090" class="contacts-phone">
+                        
+                        <a href="tel:88009039090" class="contacts-phone header__contact-phone">
                             <img class="contacts-phone__icon" src="images/icons/phone.svg">
                             <span class="contacts-phone__text">8 800 903 90 90</span>
                         </a>
+
+                        <a href="javascript:;" class="humburger">
+                            <span class="humburger_line"></span>
+                            <span class="humburger_line"></span>
+                            <span class="humburger_line"></span>
+                        </a>
                     </header>
-                    <!---->
+
                     <div class="chooko__title-container">
                         <h1 class="chooko__main-title">Натуральные шоколадные батончики</h1>
                         <div class="chooko__main-desc">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</div>
@@ -82,16 +88,18 @@
                     </div>
                 </div>
             </section>
-
-            <section class="section">
+            <!--думаю для каждой секции лучше давать свой класс-->
+            <section class="section section-why">
                 <div class="container">
-                    <div class="heading">
+                    <div class="heading section__heading">
                         <!--TODO почему в воркшопе сюда добавляется класс section__title??-->
-                        <div class="heading__title">Почему Chocco?</div>
-                        <div class="heading__subtitle">В нашем мире все происходит очень быстро, поэтому мыделаем батончики, которые удобно взять с собой.</div>
+                        <!--TODO пришла мысль: сказать о том, что это элемент блока section??-->
+                        <!--TODO тогда почему не повесить этот стиль на класс heading? section__heading??-->
+                        <div class="heading__title section__title">Почему Chocco?</div>
+                        <div class="heading__subtitle">В нашем мире все происходит очень быстро, поэтому мы делаем батончики, которые удобно взять с собой.</div>
                     </div>
                      <!--TODO почему тогда сюда не добавляем section__feature???-->
-                    <ul class="features">
+                    <ul class="features section__features">
                         <li class="features__item feature">
                             <div class="feature__img">
                                 <div class="feature__img-container">
@@ -100,7 +108,7 @@
                             </div>
                             <div class="feature__text-container">
                                 <div class="feature__name">Полезно</div>
-                                <div class="feature__desc">Натуральность - ключевое качествонашей продукции. Мы используемтолько природные ингредиенты.</div>
+                                <div class="feature__desc">Натуральность - ключевое качество нашей продукции. Мы используем только природные ингредиенты.</div>
                             </div>
                         </li>
                         <li class="features__item feature">
@@ -110,8 +118,8 @@
                                 </div>
                             </div>
                             <div class="feature__text-container">
-                                <div class="feature__name">Полезно</div>
-                                <div class="feature__desc">Натуральность - ключевое качествонашей продукции. Мы используемтолько природные ингредиенты.</div>
+                                <div class="feature__name">Вкусно</div>
+                                <div class="feature__desc">Нежный, ненавязчивый, изысканный – так клиенты описывают вкусовые качества наших батончиков.</div>
                             </div>
                         </li>
                         <li class="features__item feature">
@@ -121,14 +129,150 @@
                                 </div>
                             </div>
                             <div class="feature__text-container">
-                                <div class="feature__name">Полезно</div>
-                                <div class="feature__desc">Натуральность - ключевое качествонашей продукции. Мы используемтолько природные ингредиенты.</div>
+                                <div class="feature__name">Питательно</div>
+                                <div class="feature__desc">Высокое содержание качественного белка, а также всех необходимых витаминов и минералов.</div>
                             </div>
                         </li>
                     </ul>
                 </div>
             </section>
+
+            <section class="section section-reviews">
+                <div class="container">
+                    <div class="heading section-reviews__heading">
+                        <div class="heading__title section__title">Отзывы</div>
+                    </div>
+                   <div class="reviews">
+                       <div class="reviews__content">
+                           <div class="reviews__content-inner">
+                                <div class="reviews__pic">
+                                    <img src="./images/review_1.jpg" alt="" class="reviews__pic-img">
+                                </div>
+                                <article class="reviews__info">
+                                    <div class="reviews__title">Лучший перекус</div>
+                                    <div class="reviews__text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. </div>
+                                    <div class="reviews__author">Алёна Хмельницкая</div>
+                                </article>
+                            </div>
+                        </div>
+                        <ul class="reviews__tabs">
+                            <li class="reviews__tab round-pic round-pic--active">
+                                <a href="javascript:;" class="round-pic__link">
+                                    <img src="./images/review_1.jpg" alt="" class="round-pic__img">
+                                </a>
+                            </li>
+                            <li class="reviews__tab round-pic">
+                                <a href="javascript:;" class="round-pic__link">
+                                    <img src="./images/review_2.jpg" alt="" class="round-pic__img">
+                                </a>
+                            </li>
+                            <li class="reviews__tab round-pic">
+                                <a href="javascript:;" class="round-pic__link">
+                                    <img src="./images/review_3.jpg" alt="" class="round-pic__img">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="section section-delivery">
+                <div class="container">
+                    <div class="heading section-delivery__heading">
+                        <div class="heading__title section__title heading__title--green">Закажите доставку</div>
+                    </div>
+                    <div class="section-delivery__form">
+                        <form action="/" class="form inline-form">
+                            <div class="form__col">
+                                <div class="form__row">
+                                    <label class="form__group label-group">
+                                        <div class="label-group__name">Имя</div>
+                                        <input type="text" class="label-group__input" name="name">
+                                    </label>
+                                    <label class="form__group label-group">
+                                        <div class="label-group__name">Телефон</div>
+                                        <input type="text" class="label-group__input" name="phone" placeholder="+7 (999) 999-99-99">
+                                    </label>
+                                </div>
+                                <div class="form__row">
+                                    <label class="form__group label-group">
+                                        <div class="label-group__name">Улица</div>
+                                        <input type="text" class="label-group__input" name="street">
+                                    </label>
+                                </div>
+                                <div class="form__row">
+                                    <label class="form__group label-group">
+                                        <div class="label-group__name">Дом</div>
+                                        <input type="text" class="label-group__input" name="house">
+                                    </label>
+                                    <label class="form__group label-group">
+                                        <div class="label-group__name">Корпус</div>
+                                        <input type="text" class="label-group__input" name="korpus">
+                                    </label>
+                                    <label class="form__group label-group">
+                                        <div class="label-group__name">Квартира</div>
+                                        <input type="text" class="label-group__input" name="flat">
+                                    </label>
+                                    <label class="form__group label-group">
+                                        <div class="label-group__name">Этаж</div>
+                                        <input type="text" class="label-group__input" name="floor">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__col form__right">
+                                <div class="form__row">
+                                    <label class="form__group label-group">
+                                        <div class="label-group__name">Комментарий</div>
+                                        <textarea  class="label-group__input label-group__input--textarea" name="comment"></textarea>
+                                    </label>
+                                </div>
+                                <div class="form__controls">
+                                    <label class="radio">
+                                        <input type="radio" class="radio__input" name="price-info">
+                                        <span class="radio__pseudo-input"></span>
+                                        <div class="radio__name">Потребуется сдача</div>
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" class="radio__input" name="price-info">
+                                        <span class="radio__pseudo-input"></span>
+                                        <div class="radio__name">Оплата картой</div>
+                                    </label>
+                                </div>
+
+                                <div class="form__controls">
+                                    <label class="radio radio--checkbox">
+                                        <input type="checkbox" class="radio__input" name="price-info">
+                                        <span class="radio__pseudo-input"></span>
+                                        <div class="radio__name">Не перезванивать</div>
+                                    </label>
+                                </div>
+
+                                <div class="form__btn">
+                                    <button class="btn btn--green" type="submit">Заказать</button>
+                                    <button type="reset" class="btn btn--transparent">Очистить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!--
+            <section style="height: 60vh;">
+
+            </section>
+            -->
         </div>
     </div>
+    
+    <nav class="fix-dots">
+        <a href="#" class="fix-dots__item fix-dots__item--active"></a>
+        <a href="#" class="fix-dots__item"></a>
+        <a href="#" class="fix-dots__item"></a>
+        <a href="#" class="fix-dots__item"></a>
+        <a href="#" class="fix-dots__item"></a>
+        <a href="#" class="fix-dots__item"></a>
+        <a href="#" class="fix-dots__item"></a>
+        <a href="#" class="fix-dots__item"></a>
+        <a href="#" class="fix-dots__item"></a>
+    </nav>
 </body>
 </html>

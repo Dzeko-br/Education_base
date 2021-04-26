@@ -1,14 +1,14 @@
 .advantage {
     display: flex;
-    column-gap: 10px;
-    font-size: 16px;
+    column-gap: rem(10px);
+    font-size: rem(16px);
     
     &__icon {
         flex-shrink: 0;
-        width: 45px;
+        width: rem(45px);
     }
 
     &__desc {
-        max-width: 85px;
+        max-width: rem(85px);
     }
 }

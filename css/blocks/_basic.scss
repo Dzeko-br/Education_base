@@ -1,19 +1,41 @@
 
 html {
     box-sizing: border-box;
-  }
+}
 *, *:before, *:after {
 box-sizing: inherit;
 }
+html {
+    font: 18px/1.2 "Alegreya Sans";
 
+    @include tablet {
+        font-size: $basisFontSize - 1px;
+    }
+
+    @include phone {
+        font-size: $basisFontSize - 2px;
+    }
+}
 body {
-    font: 18px/1.2 Alegreya Sans;
-    color: #292929;
+    // font-size: rem(18px);
+    color: #666;
 }
 .wrapper {
-    min-width: $container + 20px;
+    // min-width: $container + rem(20px);
+    @media (max-width: 480px){
+        min-width: 100%;
+        overflow: hidden;
+    }
 }
 .container {
-    max-width: $container;
+    max-width: $container + 60px;
     margin: 0 auto;
+    width: 100%;//нужно ли? схлопнулся на форме 
+    padding-left: rem(30px);
+    padding-right: rem(30px);
+
+    @include phone {
+        padding-left: rem(10px);
+        padding-right: rem(10px);
+    }
 }

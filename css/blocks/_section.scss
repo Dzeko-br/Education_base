@@ -1,0 +1,18 @@
+.section {
+    position: relative;
+    height: 100vh;
+    min-height: rem(650px);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+
+    @media (max-width: 480px){
+        height: auto;
+        padding-top: rem(55px);
+        padding-bottom: rem(55px);
+    }
+
+    &__heading {
+        margin-top: rem(62px);
+    }
+}

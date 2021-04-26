@@ -1,0 +1,66 @@
+// @media screen and (max-width: 480px){
+//     /*first section*/
+//     .chooko {
+//         background-size: 80% auto, 75% auto;
+//         background-position: center 25%, right 17%;
+//     }
+//     .chooko:before {
+//         display: none;
+//     }
+
+//     .chooko__title-container {
+//         text-align: center;
+//         max-width: 100%;
+//     }
+
+//     .chooko__advantages-container {
+//         display: none;
+//     }
+    
+//     .main-menu {
+//         display: none;
+//     }
+
+//     .contacts-phone {
+//         display: none;
+//     }
+
+//     /*section why*/
+//     .section-why {
+//         background: unset;
+//     }
+//     .section-why::after {
+//         display: none;
+//     }
+
+//     /*heading*/
+//     .heading__subtitle {
+//         padding-left: 2%;
+//         padding-right: 2%;
+//     }
+
+//     /*--features--*/
+//     .features {
+//         flex-direction: column;
+//         gap: 2rem;
+//     }
+//     .features__item:not(:last-of-type):before {
+//         display: none;
+//     }
+//     .features__item {
+//         padding: 0;
+//         display: flex;
+//         align-items: center;
+//         column-gap: rem(12px);
+//     }
+//     .feature__img {
+//         margin-bottom: unset;
+//     }
+//     .feature__name + .feature__desc {
+//         margin-top: rem(10px);
+//     }
+//     .feature {
+//         text-align: left;
+//     }
+
+// }

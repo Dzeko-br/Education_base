@@ -5,31 +5,79 @@
     min-height: 60vh;
     color: #fff;
     height: 100vh;
-    padding: 24px 0 50px;
+    padding: rem(24px) 0 rem(50px);
+    position: relative;
+
+    @include tablet {
+        background-image: url('../images/bg_list.png');
+        background-position: right 35%;
+        background-repeat:  no-repeat;
+    }
 
     &__container {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+        // padding-left: 30px;
+        // padding-right: 30px;
     }
 
     &__title-container {
         max-width: 40%;
+
+        @include tablet {
+            max-width: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            &:before {
+                content: url('../images/chooko-full.png');
+            }
+        }
     }
 
     &__main-title {
         text-transform: uppercase;
-        font-size: 48px;
+        font-size: rem(48px);
         line-height: 1.2;
         font-weight: 700;
-        margin-bottom: 17px;
+        margin-bottom: rem(17px);
     }
 
     &__main-desc {
-        font-size: 21px;
+        font-size: rem(21px);
         line-height: 1.2;
         font-weight: 400;
-        margin-bottom: 32px;
+        margin-bottom: rem(32px);
+
+        @include tablet {
+            padding-left: 25%;
+            padding-right: 25%;
+        }
+    }
+
+    &:before{
+        content: url('../images/list_blur.png');//не знал даже, что в content можно добавить url // не очень нравится, что scss и css путь до картинки отличается
+        position: absolute;
+        bottom: rem(-40px);
+        left: 2%;
+    }
+
+    &::after {
+        content: url('../images/lists_combo.png');
+        position: absolute;
+        right: 0;
+        bottom: rem(-45px);
+    }
+
+    &:before, &:after {
+        @include tablet {
+            display: none;
+        }    
     }
 }

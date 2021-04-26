@@ -1,21 +1,24 @@
 .heading {
     text-align: center;
+    margin-bottom: rem(32px);
 
     &__title {
         text-transform: uppercase;
-        font-size: 48px;
-        color: #292929;
+        font-size: rem(48px);
+        color: $blackColor;
         font-weight: bold;
-        margin-bottom: 20px;
+        margin-bottom: rem(20px);
 
         &--green{
-            color: $greenColor
+            color: $greenColorDark
+        }
+
+        @media (max-width: 480px){
+            font-size: rem(40px);
         }
     }
-
     &__subtitle {
-        color: #666;
+        padding-left: 26%;
+        padding-right: 26%;
     }
-
-
 }

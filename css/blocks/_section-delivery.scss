@@ -1,0 +1,21 @@
+.section-delivery{
+    background: url(../images/pattern-bg.jpg) left center no-repeat #cfdedb;
+    background-size: cover;
+
+    @media (max-width: 480px){
+        //comment after work0ut
+        // padding-left: rem(10px);
+        // padding-right: rem(10px); 
+        padding-top: rem(85px);
+        padding-bottom: rem(80px);
+        background-position-x: center;
+    }
+
+    &__heading {
+        margin-bottom: rem(60px);
+
+        @media (max-width: 480px){
+            margin-bottom: rem(40px);
+        }
+    }
+}

@@ -1,20 +1,29 @@
 .header {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    column-gap: rem(20px);
 }
 
 .contacts-phone {
     display: flex;
     align-items: center;
-    column-gap: 5px;
+    column-gap: rem(5px);
     text-decoration: unset;
     color: inherit;
-    font-size: 22px;
+    font-size: rem(22px);
+
+    white-space: nowrap;
 
     &__icon {
-        width: 14px;
-        height: 14px;
+        width: rem(14px);
+        height: rem(14px);
         flex-shrink: 0;
+    }
+}
+
+.header__contact-phone {
+    @include tablet {
+        display: none;
     }
 }

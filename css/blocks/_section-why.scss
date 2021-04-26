@@ -1,0 +1,14 @@
+.section-why {
+    background: url('../images/list_gray.png') left center no-repeat;
+
+    &::after{
+        content: url('../images/decor-fruits-1.png');
+        position: absolute;
+        left: 0;
+        bottom: calc(#{rem(-160px)} / 2);
+    }
+
+    @include tablet {
+        background-position-y: rem(84px);
+    }
+}

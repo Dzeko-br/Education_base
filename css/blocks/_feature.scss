@@ -3,6 +3,10 @@
     text-align: center;
 }
 
+.feature__img{
+    margin-bottom: rem(20px);
+}
+
 .feature__img-container {
     background-color: #F2F5F4;
     border-radius: 50%;
@@ -10,23 +14,28 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    display: flex;
+    display: inline-flex;
+    width: rem(128px);
+    height: rem(128px);
+    text-align: center;
     align-items: center;
     justify-content: center;
+
 }
 
 .feature__icon{
     flex-shrink: 0;
-    width: 68px;
-    height: 68px;    
+    width: rem(68px);
+    height: rem(68px);    
 }
 
 .feature__name {
     font-weight: bold;
-    font-size: 27px;
+    font-size: rem(27px);
+    color: #292929;
 }
 .feature__name + .feature__desc {
-    margin-top: 15px;
+    margin-top: rem(15px);
 }
 
 .feature__desc{

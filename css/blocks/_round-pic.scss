@@ -1,0 +1,28 @@
+.round-pic {
+    width: rem(74px);
+    height: rem(74px);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    overflow: hidden;
+    border: rem(4px) solid transparent;
+
+    &--active{
+        border-color:#365A49;
+    }
+}
+.round-pic__link {
+    display: block;
+}
+.round-pic__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
