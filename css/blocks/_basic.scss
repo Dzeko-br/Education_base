@@ -4,22 +4,29 @@ html {
 }
 *, *:before, *:after {
 box-sizing: inherit;
+
 }
 html {
     font: 18px/1.2 "Alegreya Sans";
 
-    @include tablet {
-        font-size: $basisFontSize - 1px;
-    }
+    // @include tablet {
+    //     font-size: $basisFontSize - 1px;
+    // }
 
-    @include phone {
-        font-size: $basisFontSize - 2px;
-    }
+    // @include phone {
+    //     font-size: $basisFontSize - 2px;
+    // }
 }
 body {
     // font-size: rem(18px);
     color: #666;
 }
+
+h1, h2, h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 .wrapper {
     // min-width: $container + rem(20px);
     @media (max-width: 480px){
@@ -35,7 +42,7 @@ body {
     padding-right: rem(30px);
 
     @include phone {
-        padding-left: rem(10px);
-        padding-right: rem(10px);
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }

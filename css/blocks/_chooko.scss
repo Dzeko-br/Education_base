@@ -10,8 +10,13 @@
 
     @include tablet {
         background-image: url('../images/bg_list.png');
-        background-position: right 35%;
+        background-position: right 45%;
         background-repeat:  no-repeat;
+    }
+
+    @include phone {
+        background-size: rem(324px);
+        background-position-y: 28%;
     }
 
     &__container {
@@ -39,6 +44,12 @@
                 content: url('../images/chooko-full.png');
             }
         }
+
+        @include phone {
+            &:before {
+                margin-bottom: 30px;
+            }
+        }
     }
 
     &__main-title {
@@ -47,6 +58,12 @@
         line-height: 1.2;
         font-weight: 700;
         margin-bottom: rem(17px);
+
+        @include phone {
+            font-size: rem(40px);
+            line-height: rem(36px);
+            margin-bottom: rem(10px);
+        }
     }
 
     &__main-desc {
@@ -56,8 +73,15 @@
         margin-bottom: rem(32px);
 
         @include tablet {
-            padding-left: 25%;
-            padding-right: 25%;
+            padding-left: 25.5%;
+            padding-right: 25.5%;
+        }
+
+        @include phone {
+            font-size: rem(18px);
+            padding-left: 15%;
+            padding-right: 15%;
+            margin-bottom: rem(25px);
         }
     }
 
@@ -79,5 +103,12 @@
         @include tablet {
             display: none;
         }    
+    }
+}
+
+@include phone {
+    .chooko__btn.btn {
+        font-size: rem(19px);
+        padding: rem(19px) rem(36px);
     }
 }

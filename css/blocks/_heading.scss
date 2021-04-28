@@ -20,5 +20,15 @@
     &__subtitle {
         padding-left: 26%;
         padding-right: 26%;
+
+        @include tablet {
+            padding-left: 20%;
+            padding-right: 20%;
+        }
+
+        @include phone {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 }

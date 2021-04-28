@@ -18,8 +18,12 @@
         width: 100%;
         transition: .2s;
 
-        @media (max-width: 480px){
+        @include tablet {
             padding: rem(10px);
+        }
+        
+        @media (max-width: 768px){
+
         }
 
         &:not(.label-group__input--radio):focus,

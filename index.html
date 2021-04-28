@@ -60,28 +60,22 @@
                     <div class="chooko__title-container">
                         <h1 class="chooko__main-title">Натуральные шоколадные батончики</h1>
                         <div class="chooko__main-desc">Наши батончики идеально подходят для тех, кто следит за своим здоровьем</div>
-                        <a href="#" class="btn btn--white">Заказать</a>
+                        <a href="#" class="btn btn--white chooko__btn">Заказать</a>
                     </div>
 
                     <!--block adv-->
                     <div class="chooko__advantages-container">
                         <ul class="advantages">
                             <li class="advantages__item advantage">
-                                <div class="advantage__icon">
-                                    <img src="./images/icons/advantage/sheet.svg" alt="100% натуральный продукт">
-                                </div>
+                                <div class="advantage__icon advantage__icon--list"></div>
                                 <div class="advantage__desc">100% натуральный продукт</div>
                             </li>
                             <li class="advantages__item advantage">
-                                <div class="advantage__icon">
-                                    <img src="./images/icons/advantage/delivery.svg" alt="3-5 дней доставка по РФ">
-                                </div>
+                                <div class="advantage__icon advantage__icon--delivery"></div>
                                 <div class="advantage__desc">3-5 дней доставка по РФ</div>
                             </li>
                             <li class="advantages__item advantage">
-                                <div class="advantage__icon">
-                                    <img src="./images/icons/advantage/figure.svg" alt="Не портит фигуру">
-                                </div>
+                                <div class="advantage__icon advantage__icon--figure"></div>
                                 <div class="advantage__desc">Не портит фигуру</div>
                             </li>
                         </ul>
@@ -89,47 +83,39 @@
                 </div>
             </section>
             <!--думаю для каждой секции лучше давать свой класс-->
-            <section class="section section-why">
+            <section class="section why">
                 <div class="container">
-                    <div class="heading section__heading">
-                        <!--TODO почему в воркшопе сюда добавляется класс section__title??-->
-                        <!--TODO пришла мысль: сказать о том, что это элемент блока section??-->
-                        <!--TODO тогда почему не повесить этот стиль на класс heading? section__heading??-->
-                        <div class="heading__title section__title">Почему Chocco?</div>
+                    <!--избавился от класса section__heading-->
+                    <div class="heading why__heading">
+                        <h2 class="heading__title">Почему Chocco?</h2>
                         <div class="heading__subtitle">В нашем мире все происходит очень быстро, поэтому мы делаем батончики, которые удобно взять с собой.</div>
                     </div>
-                     <!--TODO почему тогда сюда не добавляем section__feature???-->
-                    <ul class="features section__features">
+                
+                    <ul class="features why__features">
                         <li class="features__item feature">
                             <div class="feature__img">
-                                <div class="feature__img-container">
-                                    <img src="./images/icons/feature/feature_1.svg" alt="" class="feature__icon">
-                                </div>
+                                <div class="feature__icon feature__icon--icon-1"></div>
                             </div>
                             <div class="feature__text-container">
-                                <div class="feature__name">Полезно</div>
+                                <h3 class="feature__name">Полезно</h3>
                                 <div class="feature__desc">Натуральность - ключевое качество нашей продукции. Мы используем только природные ингредиенты.</div>
                             </div>
                         </li>
                         <li class="features__item feature">
                             <div class="feature__img">
-                                <div class="feature__img-container">
-                                    <img src="./images/icons/feature/feature_2.svg" alt="" class="feature__icon">
-                                </div>
+                                <div class="feature__icon feature__icon--icon-2"></div>
                             </div>
                             <div class="feature__text-container">
-                                <div class="feature__name">Вкусно</div>
+                                <h3 class="feature__name">Вкусно</h3>
                                 <div class="feature__desc">Нежный, ненавязчивый, изысканный – так клиенты описывают вкусовые качества наших батончиков.</div>
                             </div>
                         </li>
                         <li class="features__item feature">
                             <div class="feature__img">
-                                <div class="feature__img-container">
-                                    <img src="./images/icons/feature/feature_3.svg" alt="" class="feature__icon">
-                                </div>
+                                <div class="feature__icon feature__icon--icon-3"></div>
                             </div>
                             <div class="feature__text-container">
-                                <div class="feature__name">Питательно</div>
+                                <h3 class="feature__name">Питательно</h3>
                                 <div class="feature__desc">Высокое содержание качественного белка, а также всех необходимых витаминов и минералов.</div>
                             </div>
                         </li>
@@ -137,22 +123,20 @@
                 </div>
             </section>
 
-            <section class="section section-reviews">
+            <section class="section opinions">
                 <div class="container">
-                    <div class="heading section-reviews__heading">
-                        <div class="heading__title section__title">Отзывы</div>
+                    <div class="heading opinions__heading">
+                        <h2 class="heading__title opinions__title">Отзывы</h2>
                     </div>
                    <div class="reviews">
                        <div class="reviews__content">
-                           <div class="reviews__content-inner">
-                                <div class="reviews__pic">
-                                    <img src="./images/review_1.jpg" alt="" class="reviews__pic-img">
-                                </div>
-                                <article class="reviews__info">
-                                    <div class="reviews__title">Лучший перекус</div>
-                                    <div class="reviews__text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. </div>
-                                    <div class="reviews__author">Алёна Хмельницкая</div>
-                                </article>
+                            <div class="reviews__pic">
+                                <img src="./images/review_1.jpg" alt="" class="reviews__pic-img">
+                            </div>
+                            <div class="reviews__info">
+                                <div class="reviews__title">Лучший перекус</div>
+                                <div class="reviews__text">Я ем малыми порциями, но часто. Это повышает мою продуктивность в разы. В течение дня сижу за компьютером и часто отходить в кафе или на кухню просто не могу себе позволить. А батончик – он всегда под рукой. Это приятно и удобно. </div>
+                                <div class="reviews__author">Алёна Хмельницкая</div>
                             </div>
                         </div>
                         <ul class="reviews__tabs">
@@ -178,7 +162,8 @@
             <section class="section section-delivery">
                 <div class="container">
                     <div class="heading section-delivery__heading">
-                        <div class="heading__title section__title heading__title--green">Закажите доставку</div>
+                        <!-- Избавился пока от класса <h2 class="heading__title section__title heading__title--green">Закажите доставку</h2>!-->
+                        <h2 class="heading__title heading__title--green">Закажите доставку</h2>
                     </div>
                     <div class="section-delivery__form">
                         <form action="/" class="form inline-form">
@@ -255,11 +240,6 @@
                     </div>
                 </div>
             </section>
-            <!--
-            <section style="height: 60vh;">
-
-            </section>
-            -->
         </div>
     </div>
     

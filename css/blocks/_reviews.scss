@@ -4,30 +4,35 @@
     background-color: #F8FAF9;
     position: relative;
     overflow: hidden;
-
-    @media (min-width: 768px){
-        &:before{
-            content: '';
-            display: block;
-            width: rem(83px);
-            height: rem(83px);
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #fff;
-            top: calc( #{rem(-83px)} + 25px);
-            border-radius: 50%;
-        }
-    }
-}
-
-.reviews__content-inner {
     display: flex;
     align-items: center;
     column-gap: rem(38px);
 
+    &:before{
+        content: '';
+        display: block;
+        width: rem(83px);
+        height: rem(83px);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        top: calc( #{rem(-83px)} + 25px);
+        border-radius: 50%;
+
+        @include phone {
+            display: none;
+        }
+    }
+
+
     @include tablet {
         flex-direction: column;
+        row-gap: rem(35px);
+        padding: rem(56px) rem(24px) rem(24px);
+    }
+
+    @include phone {
         row-gap: rem(16px);
     }
 }
@@ -68,6 +73,10 @@
     line-height: 1.3;
     color: $blackColor;
     font-weight: 500;
+
+    @include tablet {
+        margin-top: rem(16px);
+    }
 }
 
 .reviews__tabs {

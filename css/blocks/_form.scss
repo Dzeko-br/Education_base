@@ -4,8 +4,13 @@
     
     @include tablet {
         flex-direction: column;
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 17%;
+        padding-right: 17%;
+    }
+    
+    @include phone{
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 .form__col {
@@ -25,6 +30,10 @@
 .form__controls {
     display: flex;
     gap: rem(30px);
+
+    @include phone {
+        justify-content: center;
+    }
 }
 .form__controls + .form__controls {
     margin-top: rem(20px);
