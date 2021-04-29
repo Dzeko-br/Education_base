@@ -40,6 +40,12 @@ h1, h2, h3 {
   }
 }
 
+.logo__img {
+  width: 53px;
+  height: 38px;
+  fill: #fff;
+}
+
 .chooko {
   background: url("../images/chookolate.png") 90% center no-repeat, url("../images/bg_list.png") right bottom no-repeat;
   background-color: #86C3D7;
@@ -168,6 +174,7 @@ h1, h2, h3 {
   width: 0.7777777778rem;
   height: 0.7777777778rem;
   flex-shrink: 0;
+  fill: #fff;
 }
 
 @media screen and (max-width: 768px) {
@@ -339,11 +346,9 @@ h1, h2, h3 {
   flex-flow: column wrap;
   justify-content: center;
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .section {
-    height: auto;
-    padding-top: 3.0555555556rem;
-    padding-bottom: 3.0555555556rem;
+    min-height: 800px;
   }
 }
 .section__heading {
