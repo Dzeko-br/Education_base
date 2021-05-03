@@ -10,7 +10,8 @@
         content: url('../images/decor-fruits-1.png');
         position: absolute;
         left: 0;
-        bottom: calc(#{rem(-160px)} / 2);
+        bottom: rem(-100px);
+        z-index: 1;
 
         @include phone {
             display: none;

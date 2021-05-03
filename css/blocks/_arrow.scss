@@ -1,0 +1,45 @@
+.arrow {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+
+    &--prev {
+        left: -40px;
+        background-image: url('../images/icons/arrow-prev.svg');
+
+        @include tablet {
+            left: 15%;
+        }
+
+        @include phone {
+            left: -10px;
+        }
+    }
+    &--next {
+        right: -40px;
+        background-image: url('../images/icons/arrow-next.svg');
+        
+        @include tablet {
+            right: 15%;
+        }
+
+        @include phone {
+            right: -10px;
+        }
+    }
+
+    @include tablet {
+        top: 30%;
+    }
+
+    @include phone {
+        top: 25%;
+    }
+
+}

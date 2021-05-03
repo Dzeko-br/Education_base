@@ -1,0 +1,52 @@
+.compound-detail {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #D5D5D5;
+    padding: 18px 14px;
+    border-radius: 4px;
+    color: #000;
+    font-size: 16px;
+    width: 100%;
+    max-width: rem(275px);
+    left: rem(91px);
+    top: 0;
+    display: none;
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        flex: 1;
+        align-items: center;
+        column-gap: 15px;
+        padding: 10px;
+    }
+
+    &__name {
+        flex: 1;
+        font-weight: 500;
+    }
+    //TODO вопрос как выровнять Icon
+    
+    // &__icon {
+    //     width: 32px;
+    //     height: 32px;
+
+    //     img {
+    //         // width: 32px;
+    //         // height: 32px;
+    //     }
+    // }
+
+    &__weight {
+        font-weight: 400;
+    }
+
+    &:hover {
+        display: flex;
+    }
+}
+
