@@ -88,7 +88,6 @@
             </section>
             <section class="section why">
                 <div class="container">
-                    <!--избавился от класса section__heading-->
                     <div class="heading why__heading">
                         <h2 class="heading__title">Почему Chocco?</h2>
                         <div class="heading__subtitle">В нашем мире все происходит очень быстро, поэтому мы делаем батончики, которые удобно взять с собой.</div>
@@ -216,6 +215,65 @@
                 </div>
             </section>
 
+            <section class="section team">
+                <div class="container">
+                    <div class="heading why__heading">
+                        <h2 class="heading__title">Команда</h2>
+                    </div>
+
+                    <ul class="team-list">
+                        <li class="team-list__item">
+                            <div class="team-list__box-pic">
+                                <img src="./images/team_1.jpg" alt="" class="team-list__pic">
+                            </div>
+                            <a href="javascript:;" class="team-list__name team-toggle">Борис Федорович</a>
+                            <div class="team-list__desc">
+                                <div class="team-list__post">Главный технолог</div>
+                                <div class="team-list__slogan">Отвечает за вкусовые качества и калорийность.</div>
+                            </div>
+                        </li>
+                        <li class="team-list__item">
+                            <div class="team-list__box-pic">
+                                <img src="./images/team_2.jpg" alt="" class="team-list__pic">
+                            </div>
+                            <a href="javascript:;" class="team-list__name team-toggle">Алла Иванова</a>
+                            <div class="team-list__desc">
+                                <div class="team-list__post">Специалист по упаковке</div>
+                                <div class="team-list__slogan">Автор запоминающегося стиля наших батончиков.</div>
+                            </div>
+                        </li>
+                        <li class="team-list__item">
+                            <div class="team-list__box-pic">
+                                <img src="./images/team_3.jpg" alt="" class="team-list__pic">
+                            </div>
+                            <a href="javascript:;" class="team-list__name team-toggle team-toggle--active">Кирилл Матросов</a>
+                            <div class="team-list__desc">
+                                <div class="team-list__post">Оператор</div>
+                                <div class="team-list__slogan">С радостью поможет подобрать батончики и оформить заказ.</div>
+                            </div>
+                        </li>
+                        <li class="team-list__item">
+                            <div class="team-list__box-pic">
+                                <img src="./images/team_4.jpg" alt="" class="team-list__pic">
+                            </div>
+                            <a href="javascript:;" class="team-list__name team-toggle">Мила Рыжкова</a>
+                            <div class="team-list__desc">
+                                <div class="team-list__post">PR, маркетинг</div>
+                                <div class="team-list__slogan">По всем вопросам сотрудничества и рекламы писать только Миле.</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section menu">
+                <div class="container">
+                    <div class="heading why__heading">
+                        <h2 class="heading__title">Команда</h2>
+                    </div>
+                </div>
+            </section>
+
             <section class="section opinions">
                 <div class="container">
                     <div class="heading opinions__heading">
@@ -252,6 +310,15 @@
                     </div>
                 </div>
             </section>
+
+            <section class="section video-api">
+                <div class="container">
+                    <div class="heading opinions__heading">
+                        <h2 class="heading__title opinions__title">Как мы работаем</h2>
+                    </div>
+                </div>
+            </section>
+
             <section class="section delivery">
                 <div class="container">
                     <div class="heading delivery__heading">
@@ -334,7 +401,60 @@
                 </div>
             </section>
 
-            <section style="min-height: 60vh;"></section>
+            <section class="section map">
+                <div class="map__container">
+                    <!--TODO push map-->
+                    <div id="map"></div>
+                </div>
+                <footer class="footer">
+                    <div class="container footer__container">
+                        <div class="footer__col">
+                            <div class="footer__adress">
+                                Москва, ул.Новый Арбат, д.31/12
+                            </div>
+                            <a href="tel:88009039090" class="contacts-phone footer__contact-phone">
+                                <svg class="contacts-phone__icon">
+                                    <use xlink:href="./images/sprite.svg#phone"></use>
+                                </svg>
+                                <span class="contacts-phone__text">8 800 903 90 90</span>
+                            </a>
+                        </div>
+                        <div class="footer__col">
+                            <ul class="social">
+                                <!--TODO думаю можно не указывать модификатор соц сети  social__item-link--vk-->
+                                <li class="social__item">
+                                    <a href="javascript:;" class="social__item-link">
+                                        <svg class="social__icon">
+                                            <use xlink:href="./images/sprite.svg#vk"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="javascript:;" class="social__item-link">
+                                        <svg class="social__icon">
+                                            <use xlink:href="./images/sprite.svg#fb"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="javascript:;" class="social__item-link">
+                                        <svg class="social__icon">
+                                            <use xlink:href="./images/sprite.svg#inst"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="javascript:;" class="social__item-link">
+                                        <svg class="social__icon">
+                                            <use xlink:href="./images/sprite.svg#tw"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </section>
         </div>
     </div>
     
@@ -349,10 +469,7 @@
         <a href="#" class="fix-dots__item"></a>
         <a href="#" class="fix-dots__item"></a>
     </nav>
-    <!--
-        TODO думаю не лучшее решение размещать здесь
-        а может лучше использовать блок из header, чтобы избежать дубля?
-    -->
+
     <div class="mobile-menu">
         <a href="javascript:;" class="mobile-menu__close close">
             <svg class="close__icon">
@@ -385,6 +502,7 @@
             </ul>
         </nav>
     </div>
+
     <script src="./scripts/script.js"></script>
 </body>
 </html>

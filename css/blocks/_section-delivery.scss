@@ -2,6 +2,24 @@
     background: url(../images/pattern-bg.jpg) left center no-repeat #cfdedb;
     background-size: cover;
 
+
+    &:before,
+    &:after {
+        position: absolute;
+    }
+
+    &:before {
+        content: url('../images/decor-fruits-6.png');
+        bottom: 11%;
+        left: rem(51px);
+    }
+    &:after {
+        content: url('../images/decor-fruits-5.png');
+        bottom: 9%;
+        right: rem(10px);
+    }
+
+
     @media (max-width: 480px){
         //comment after work0ut
         // padding-left: rem(10px);

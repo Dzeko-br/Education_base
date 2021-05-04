@@ -707,6 +707,19 @@ h1, h2, h3 {
   background: url(../images/pattern-bg.jpg) left center no-repeat #cfdedb;
   background-size: cover;
 }
+.delivery:before, .delivery:after {
+  position: absolute;
+}
+.delivery:before {
+  content: url("../images/decor-fruits-6.png");
+  bottom: 11%;
+  left: 2.8333333333rem;
+}
+.delivery:after {
+  content: url("../images/decor-fruits-5.png");
+  bottom: 9%;
+  right: 0.5555555556rem;
+}
 @media (max-width: 480px) {
   .delivery {
     padding-top: 4.7222222222rem;
@@ -1273,4 +1286,114 @@ h1, h2, h3 {
   .arrow {
     top: 25%;
   }
+}
+
+.team-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  gap: 1.1111111111rem;
+  flex-wrap: wrap;
+}
+.team-list__item {
+  flex-basis: calc(100% / 4 - 1.1111111111rem);
+}
+.team-list__box-pic {
+  width: 220px;
+  height: 290px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.team-list__pic {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.team-list__name {
+  margin-top: 1.1666666667rem;
+  font-weight: bold;
+  font-size: 1.1666666667rem;
+  color: #292929;
+  text-decoration: unset;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-right: 15px;
+  column-gap: 5px;
+}
+.team-list__name:after {
+  content: "";
+  border: 5px solid transparent;
+  border-top: 8px solid green;
+  transform: translateY(4px);
+  transition: 0.3s;
+}
+.team-list__post {
+  color: #292929;
+  margin-bottom: 5px;
+}
+
+.team-toggle--active:after {
+  transform: translateY(-4px) rotate(180deg);
+}
+
+.video-api {
+  background-color: #F8FAF9;
+}
+.video-api:before, .video-api:after {
+  position: absolute;
+  z-index: 1;
+}
+.video-api:after {
+  content: url("../images/decor-fruits-8.png");
+  right: 0;
+  bottom: -5.5555555556rem;
+}
+
+.social {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.7777777778rem;
+}
+.social__item, .social__item-link {
+  display: block;
+}
+.social__icon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+.social__icon:hover {
+  fill: #000;
+}
+
+.footer {
+  padding: 1.3333333333rem 0;
+  background-color: #fff;
+}
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__adress {
+  color: #292929;
+  font-size: 1.1666666667rem;
+  margin-bottom: 5px;
+}
+.footer__contact-phone {
+  color: #497870;
+}
+.footer__contact-phone .contacts-phone__icon {
+  fill: #497870;
 }
