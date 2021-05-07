@@ -1,0 +1,58 @@
+.feature {
+    text-align: center;
+
+    @include phone {
+        display: flex;
+        align-items: center;
+        column-gap: rem(12px);
+        text-align: left;
+    }
+}
+
+.feature__img{
+    margin-bottom: rem(20px);
+
+    @include phone {
+        margin-bottom: 0;
+    }
+}
+
+.feature__icon {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    width: rem(128px);
+    height: rem(128px);
+    background-color: #F2F5F4;
+    background-position: center center;
+    background-size: 64px 68px;
+    background-repeat: no-repeat;
+    
+    @each $icon in (1, 2, 3) {
+        &--icon-#{$icon} {
+            background-image: url('../images/icons/feature/feature_#{$icon}.svg');
+        }
+    }
+}
+
+.feature__name {
+    font-weight: bold;
+    font-size: rem(27px);
+    color: #292929;
+}
+.feature__name + .feature__desc {
+    margin-top: rem(20px);
+
+    @include tablet {
+        margin-top: rem(8px);
+    }
+}
+
+.feature__desc{
+    color: #666666;
+    line-height: 1.3;
+}

@@ -1,0 +1,67 @@
+.btn {
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: unset;
+    font-size: 16px;
+    font-weight: 800;
+    padding: rem(21px) rem(41px);
+    border: none;
+    outline: 0;
+    border-radius: rem(100px);
+    -webkit-border-radius: rem(100px);
+    -moz-border-radius: rem(100px);
+    -ms-border-radius: rem(100px);
+    -o-border-radius: rem(100px);
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    cursor: pointer;
+
+
+    &.btn--white {
+        background-color: #fff;
+        color: $greenColor;
+
+        &:hover {
+            background-color: $greenColor;
+            color: #fff;
+            transition: .2s;
+            -webkit-transition: .2s;
+            -moz-transition: .2s;
+            -ms-transition: .2s;
+            -o-transition: .2s;
+        }
+    }
+
+    &.btn--green {
+        background-color: $greenColor;
+        color: #fff;
+
+        &:hover {
+            background-color: #fff;
+            color: $greenColor;
+            transition: .2s;
+            -webkit-transition: .2s;
+            -moz-transition: .2s;
+            -ms-transition: .2s;
+            -o-transition: .2s;
+        }
+    }
+
+    &.btn--transparent {
+        background-color: transparent;
+        color: $greenColor;
+
+        &:hover {
+            box-shadow: 0 0 0 rem(1px) #fff;
+            transition: .2s;
+            -webkit-transition: .2s;
+            -moz-transition: .2s;
+            -ms-transition: .2s;
+            -o-transition: .2s;
+        }
+    }
+}

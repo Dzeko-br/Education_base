@@ -1,0 +1,51 @@
+.fix-dots {
+    position: fixed;
+    right: rem(50px);
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    z-index: 100;
+
+    @media screen and (min-width: 1100px){
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(5px);
+    }
+}
+
+.fix-dots__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: rem(19px);
+    height: rem(19px);
+    border-radius: 50%;
+    border: rem(2px) solid transparent;
+    position: relative;
+
+    &:before{
+        content: '';
+        width: rem(9px);
+        height: rem(9px);
+        background-color: #fff;
+        border-radius: 50%;
+    }
+
+    &--active {
+        border-color: #fff;
+    }
+}
+
+.fix-dots--black {
+
+    .fix-dots__item {
+        
+        &--active {
+            border-color: $greenColor;
+        }
+
+        &:before{
+            background-color: $greenColor;
+        }
+    }
+}

@@ -1,0 +1,89 @@
+// $basisFontSize: 18px;
+$container: 940px;
+
+
+html {
+    font-size: $basisFontSize;
+    box-sizing: border-box;
+    // @include tablet {
+    //     font-size: $basisFontSize - 1px;
+    // }
+
+    // @include phone {
+    //     font-size: $basisFontSize - 2px;
+    // }
+    
+}
+
+*, 
+*:before, 
+*:after {
+    box-sizing: border-box;
+}
+
+html, 
+body {
+  height: 100%;
+}
+
+body {
+    font: 18px/1.2 "Alegreya Sans";
+    font-weight: normal;
+    position: relative;
+    color: #666666;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.wrapper {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    // @media (max-width: 480px){
+    //     min-width: 100%;
+    //     overflow: hidden;
+    // }
+}
+.main-content {
+    height: 100%;
+    transition: transform 1s;
+    will-change: transform;
+}
+
+.container {
+    max-width: $container + 60px;
+    margin: 0 auto;
+    width: 100%;
+    padding-left: rem(30px);
+    padding-right: rem(30px);
+
+    @include phone {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    white-space: nowrap;
+}
+
+img {
+    display: block;//fix bottom space
+    max-width: 100%;
+}
+  

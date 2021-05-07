@@ -1,0 +1,81 @@
+$blueColor: #86C3D7;
+$greenColor: #497870;
+$greenColorDark: #365A49;
+$blackColor: #292929;
+
+$container: 940px;
+
+$basisFontSize: 18px;
+
+//breackpoints
+$tablet: 768px;
+$phone: 480px;
+
+
+@import './layouts/media';
+@import './layouts/basis';
+
+// @import "./blocks/*";
+
+
+@import "./blocks/section";
+@import "./blocks/heading";
+
+//section-chooko
+@import "./blocks/section-chooko";
+@import "./blocks/logo";
+@import "./blocks/header";
+@import "./blocks/nav";
+@import "./blocks/advantages";
+@import "./blocks/advantage";
+
+//section-why
+@import "./blocks/section-why";
+
+@import "./blocks/features";
+@import "./blocks/feature";
+
+//section-slider
+@import "./blocks/section-slider";
+@import "./blocks/products-slider";
+@import "./blocks/products";
+@import "./blocks/product";
+@import "./blocks/compound";
+@import "./blocks/compound-detail";
+@import "./blocks/arrow";
+
+//section-team
+@import "./blocks/section-team";
+@import "./blocks/team";
+
+//section-menu
+@import "./blocks/section-menu";
+@import "./blocks/product-menu";
+
+
+//section opinion
+@import "./blocks/section-reviews";
+@import "./blocks/reviews";
+@import "./blocks/round-pic";
+
+//section-video
+@import "./blocks/section-video";
+
+//section delivery
+@import "./blocks/section-delivery";
+@import "./blocks/form";
+@import "./blocks/label-group";
+@import "./blocks/radio";
+
+// @import "./blocks/slider";
+
+@import "./blocks/humburger";
+@import "./blocks/btn";
+@import "./blocks/dots";
+
+@import "./blocks/map";
+@import "./blocks/footer";
+@import "./blocks/socials";
+@import "./blocks/modal";
+@import "./blocks/mobile-menu";
+@import "./blocks/close";

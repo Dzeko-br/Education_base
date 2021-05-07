@@ -1,0 +1,11 @@
+.slider-products {
+    display: flex;
+    position: relative;
+    z-index: 2;
+
+    .bx-wrapper {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+    }
+}
