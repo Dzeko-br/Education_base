@@ -16,7 +16,8 @@ $phone: 480px;
 @import './layouts/basis';
 
 // @import "./blocks/*";
-
+@import "./blocks/btn";
+@import "./blocks/phone";
 
 @import "./blocks/section";
 @import "./blocks/heading";
@@ -70,7 +71,6 @@ $phone: 480px;
 // @import "./blocks/slider";
 
 @import "./blocks/humburger";
-@import "./blocks/btn";
 @import "./blocks/dots";
 
 @import "./blocks/map";

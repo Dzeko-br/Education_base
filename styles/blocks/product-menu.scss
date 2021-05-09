@@ -9,6 +9,7 @@
         background-position: center;
     }
 }
+
 .menu__heading {
     color: #fff;
     position: absolute;
@@ -16,7 +17,8 @@
     top: rem(100px);
 
     @include phone {
-        left: 10px;
+        left: rem(10px);
+        top: rem(70px);
     }
 
     .heading__title {
@@ -41,10 +43,7 @@
         position: relative;
         width: auto;
         transition: width 0.5s ease-in;
-
-        @include phone {
-            z-index: 30;
-        }
+        z-index: 30;
     }
 
     &__hidden{
@@ -74,7 +73,7 @@
         width: rem(100px);
 
         @include phone {
-            width: rem(70px);
+            width: rem(60px);
         }
 
         &--milk {
@@ -109,7 +108,7 @@
         font-weight: bold;
 
         @include phone {
-            font-size: rem(40px);
+            font-size: rem(36px);
         }
     }
 
@@ -126,6 +125,15 @@
         top: rem(30px);
         right: rem(30px);
 
+        @include tablet {
+            top: rem(45px);
+            right: rem(20px);
+        }
+
+        @include phone{
+            display: none;
+        }
+
         &-icon {
             fill: #fff;
             opacity: 0.7;
@@ -141,5 +149,15 @@
         @include phone {
             padding-right: rem(70px);
         }
+    }
+
+    @include phone {
+        &.active {
+            .menu-acco__item:not(.menu-acco__item--active) {
+                width: 0;
+                opacity: 0;
+                transition: width .5s;
+            }
+        }        
     }
 }

@@ -58,11 +58,19 @@
             transform: translateY(4px);
             transition: .3s;
         }
+
+        &--active {
+            &:after {
+                transform: translateY(-4px) rotate(180deg);
+            }
+        }
     }
 
     &__post {
         color: #292929;
         margin-bottom: 5px;
+        font-weight: 500;
+        margin-top: unset;
     }
 
     &__desc {
@@ -95,8 +103,4 @@
             padding: 0 26%;
         }
     }
-}
-
-.team-toggle--active:after {
-    transform: translateY(-4px) rotate(180deg);
 }
