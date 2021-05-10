@@ -1,0 +1,38 @@
+.humburger {
+    width: 26px;
+    height: 24px;
+    display: none;
+    flex-shrink: 0;
+    position: fixed;
+    right: 15px;
+    top: 25px;
+
+
+    @include tablet {
+        display: block;
+        // margin-right: 9px;
+        // margin-top: 9px;
+    }
+
+    @include phone {
+        margin-right: 0;
+    }
+
+    &__line {
+        display: block;
+        height: 4px;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    &--black {
+        .humburger__line {
+            background-color: $greenColor;
+        }
+    }
+}
+
+.humburger__line + .humburger__line {
+    margin-top: 5px;
+}

@@ -1,0 +1,23 @@
+.section {
+    position: relative;
+    // height: 100vh;
+    height: 100%;
+    min-height: rem(650px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include tablet {
+        min-height: 800px;
+    }
+
+   @include phone  {
+        // height: auto;
+        // padding-top: rem(55px);
+        // padding-bottom: rem(55px);
+    }
+
+    &__heading {
+        margin-top: rem(62px);
+    }
+}

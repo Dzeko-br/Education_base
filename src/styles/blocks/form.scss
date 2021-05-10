@@ -1,0 +1,53 @@
+.form {
+    display: flex;
+    column-gap: rem(25px);
+    
+    @include tablet {
+        flex-direction: column;
+        padding-left: 17%;
+        padding-right: 17%;
+    }
+    
+    @include phone{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.form__col {
+    flex: 1;
+}
+
+.form__row {
+    display: flex;
+    // flex: 1 1 rem(0px);??
+    gap: rem(17px);
+    margin-bottom: rem(14px);
+}
+
+.form__group {
+    flex: 1;
+}
+
+.form__controls {
+    display: flex;
+    gap: rem(30px);
+
+    @include phone {
+        justify-content: center;
+    }
+}
+
+.form__controls + .form__controls {
+    margin-top: rem(20px);
+}
+
+.form__btn {
+    margin-top: rem(44px);
+    display: flex;
+    gap: rem(10px);
+
+    @include tablet {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

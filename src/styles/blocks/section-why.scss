@@ -1,0 +1,33 @@
+.why {
+    background: url('../images/list_gray.png') left center no-repeat;
+
+    &__heading {
+        margin-bottom: rem(50px);
+    }
+    
+
+    &::after{
+        content: url('../images/decor-fruits-1.png');
+        position: absolute;
+        left: 0;
+        bottom: rem(-100px);
+        z-index: 1;
+
+        @include phone {
+            display: none;
+        }
+    }
+
+    @include tablet {
+        background-position-y: rem(84px);
+
+        .why__heading .heading__title {
+            margin-bottom: 10px;
+        }
+    }
+
+    @include phone {
+        background: unset;
+    }
+
+}

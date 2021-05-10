@@ -1,0 +1,19 @@
+.close {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+
+    &__icon {
+        width: 20px;
+        height: 20px;
+        fill: inherit;
+        transition: .3s;
+    }
+
+    &:hover {
+        fill: darken(#fff, 20);
+    }
+}

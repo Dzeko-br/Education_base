@@ -1,0 +1,19 @@
+.team {
+    &:before,
+    &:after {
+        position: absolute;
+        z-index: 1;
+    }
+
+    &:before {
+        content: url('../images/decor-fruits-9.png');
+        right: 0;
+        top: rem(-492px / 2);
+    }
+
+    &:after {
+        content: url('../images/decor-fruits-10.png');
+        left: rem(32px);
+        bottom: rem(-55px);
+    }
+}
