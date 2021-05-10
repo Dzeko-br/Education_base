@@ -5,9 +5,9 @@
 ## Установка
 
 ```sh
-https://github.com/Dzeko-br/Education_base.git
-cd Dmitry_Coocho
-npm i
+git clone https://github.com/Dzeko-br/Education_base.git
+cd Education_base
+npm install
 ```
 
 ## Скрипты gulp
