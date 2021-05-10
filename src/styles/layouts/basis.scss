@@ -9,9 +9,9 @@ html {
     //     font-size: $basisFontSize - 1px;
     // }
 
-    // @include phone {
-    //     font-size: $basisFontSize - 2px;
-    // }
+    @include phone {
+        font-size: $basisFontSize - 2px;
+    }
     
 }
 
@@ -60,6 +60,8 @@ h1, h2, h3 {
     width: 100%;
     padding-left: rem(30px);
     padding-right: rem(30px);
+    position: relative;
+    z-index: 5;
 
     @include phone {
         padding-left: 10px;

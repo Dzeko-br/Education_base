@@ -26,6 +26,13 @@
     &__box-pic {
         height: rem(290px);
         margin-bottom: rem(21px);
+
+        @include phone {
+            height: rem(180px);
+            width: rem(138px);
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 
     &__pic {
@@ -100,7 +107,7 @@
         }
 
         @include phone {
-            padding: 0 26%;
+            padding: 0 15%;
         }
     }
 }

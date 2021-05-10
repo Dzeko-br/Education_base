@@ -8,13 +8,12 @@
     justify-content: center;
 
     @include tablet {
-        min-height: 800px;
+        min-height: rem(800px);
     }
 
    @include phone  {
-        // height: auto;
-        // padding-top: rem(55px);
-        // padding-bottom: rem(55px);
+        padding-top: rem(30px);
+        padding-bottom: rem(30px);
     }
 
     &__heading {

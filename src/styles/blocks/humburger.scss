@@ -24,6 +24,10 @@
         background-color: #fff;
         width: 100%;
         border-radius: 10px;
+
+        @include phone {
+            box-shadow: 0 0 3px $greenColorDark;
+        }
     }
 
     &--black {

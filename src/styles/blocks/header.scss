@@ -8,7 +8,7 @@
 
 .header__contact-phone {
     @include tablet {
-        display: none;
+        display: none!important;
     }
 }
 .header__menu {

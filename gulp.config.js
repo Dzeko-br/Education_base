@@ -11,5 +11,6 @@ module.exports = {
         'node_modules/bxslider/dist/jquery.bxslider.js',
         'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js',
         'node_modules/mobile-detect/mobile-detect.js',
+        'node_modules/jquery-touchswipe/jquery.touchSwipe.js',
     ]
 }

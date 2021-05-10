@@ -1,24 +1,26 @@
-(function () {
+; (function () {
 
     const messureWidth = (item) => {
         let reqItemWidth = 0
         const screenWidth = $(window).width()
         const container = item.closest(".menu-acco")
-        const titlesBlocks = container.find(".menu-acco__btn")
+        const titlesBlocks = container.find(".menu-acco__btn");
         // const titlesWidth = titlesBlocks.width() * titlesBlocks.length
         const titlesWidth = titlesBlocks.width();
 
         const textContainer = item.find(".menu-acco__content");
-        const paddingLeft = parseInt(textContainer.css("padding-left"))
-        const paddingRight = parseInt(textContainer.css("padding-right"))
+        const paddingLeft = parseInt(textContainer.css("padding-left"));
+        const paddingRight = parseInt(textContainer.css("padding-right"));
 
-        const isTabletMenu = window.matchMedia("(max-width: 992px)").matches
-        const isMobileMenu = window.matchMedia("(max-width: 480px)").matches
-
+        const isTabletMenu = window.matchMedia("(max-width: 992px) and (min-width: 481px)").matches;
+        console.log(isTabletMenu);
+        const isMobileMenu = window.matchMedia("(max-width: 480px)").matches;
+        console.log(isMobileMenu)
         if (isTabletMenu) {
             reqItemWidth = screenWidth - titlesWidth * titlesBlocks.length;
         }
         else if (isMobileMenu) {
+            console.log(isMobileMenu);
             container.addClass("active");
             reqItemWidth = screenWidth - titlesWidth;
 

@@ -5,6 +5,7 @@
 
     const mobileDetect = new MobileDetect(window.navigator.userAgent);
     const isMobile = mobileDetect.mobile();
+    const smallMobile = 374;
 
     const sidemenu = $(".fix-dots");
     const hamburger = $('.humburger');
@@ -64,14 +65,19 @@
         const activeSection = sections.filter(".active");
         const nextSection = activeSection.next();
         const prevSection = activeSection.prev();
+        const wrapper = $('.wrapper');
 
-
-        if (direction == "next" && nextSection.length) {
-            performTransition(nextSection.index())
+        if ($(window).width() <= smallMobile) {
+            wrapper.css({ 'height': 'auto' });
         }
+        else {
+            if (direction == "next" && nextSection.length) {
+                performTransition(nextSection.index())
+            }
 
-        if (direction == "prev" && prevSection.length) {
-            performTransition(prevSection.index())
+            if (direction == "prev" && prevSection.length) {
+                performTransition(prevSection.index())
+            }
         }
     };
 
@@ -111,8 +117,19 @@
         const $this = $(e.currentTarget);
         const target = $this.attr("data-scroll-to");
         const reqSection = $(`[data-section-id=${target}]`);
+        const reqSectionTop = `${reqSection.offset().top}px`;
+        const wrapper = $('.wrapper');
 
-        performTransition(reqSection.index());
+        console.log($(window).scrollTop());
+
+        if ($(window).width() <= smallMobile) {
+            wrapper.css({ 'height': 'auto' });
+            $('html,body').stop().animate({ scrollTop: `${reqSectionTop}px` });
+            return false;
+        }
+        else {
+            performTransition(reqSection.index());
+        }
     })
 
 

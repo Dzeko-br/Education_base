@@ -81,11 +81,7 @@ task('allCss', () => {
 
 
 // //scripts
-/*
-    TODO возможно как то сюда включить yandex map? 
-    https://github.com/bruderstein/gulp-html-src
 
-*/
 task('scripts', () => {
     return src([...JS_LIBS, `${SRC_PATH}/scripts/*.js`])
         .pipe(gulpif(env === 'dev', sourcemaps.init()))
@@ -110,7 +106,7 @@ task('server', () => {
 });
 
 task('watch', () => {
-    watch(`${SRC_PATH}/styles/**/*.scss`, series('styles'));
+    watch(`${SRC_PATH}/styles/**/*.scss`, series('styles', 'allCss'));
     watch(`${SRC_PATH}/*.html`, series('copy:html'));
     watch(`${SRC_PATH}/scripts/*.js`, series('scripts'));
 })
@@ -119,7 +115,7 @@ task('watch', () => {
 task('default',
     series('clean',
         parallel('copy:html', 'copy:img', 'copy:video', 'scripts'),
-        'styles', 'allCss',
+        series('styles', 'allCss'),
         parallel('watch', 'server')
     )
 );
